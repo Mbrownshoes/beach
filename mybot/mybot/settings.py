@@ -20,3 +20,6 @@ NEWSPIDER_MODULE = 'mybot.spiders'
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'mybot (+http://www.yourdomain.com)'
 #setting up django's project full path.
+ITEM_PIPELINES = {
+    'mybot.pipelines.MybotPipeline': 1000,
+}
