@@ -16,5 +16,5 @@ class WaterT(models.Model):
 class WaterQuality(models.Model):
     ecoli = models.IntegerField()
     def __unicode__(self):
-        return self.ecoli
+        return unicode(self.ecoli)
 
