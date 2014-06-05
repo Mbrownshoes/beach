@@ -10,7 +10,7 @@ class WaterT(models.Model):
 
 class AirT(models.Model):
     air_temp = models.IntegerField()
-    watert = models.ForeignKey(WaterT)
+    # watert = models.ForeignKey(WaterT)
     def __unicode__(self):
         return unicode(self.air_temp)
 
