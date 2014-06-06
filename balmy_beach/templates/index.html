@@ -9,35 +9,34 @@
 
 </head>
 	<body>
-		<div class = "container">
-			<div class = "row">
-				<div class= "col-md-9 bs-docs-header" >
-					<h1>Balmy Beach Water Conditions</h1>
+		<div class = "container ">
+				<div class= "bs-docs-header " >
+					<h1 class="brand-heading">Kew-Balmy Beach</h1>
+					<p class="lead">Current weather and water quality conditions. An E. coli count less than 100 (per 100 ml) is considered safe to swim in Ontario.
+					</p>
 				</div>
 
-				<div class="row">
-					<div class="col-md-6">	
-						{% block table %}
-						<table id = "id_conditions_table" class ="table table-striped">
-							<thead>
-								<tr>
-									<th>Air temperature </th>
-									<th>Water temperature </th>
-									<th>Water quality</th>
-								</tr>
-							</thead>
-								<tbody>
-									<tr>
-									<td>{{ airtemps.air_temp }} (&deg C)</td>
-									<td>{{ watertemps.surf_temp }} (&deg C)</td>
-									<td>{{ waterqual.ecoli }} (ppm)</td>
-									</tr>
-								</tbody>
-						</table>	
-						{% endblock %}
+				<div>
+					<!-- <div class="col-lg-6"> -->
+						<div class="col-md-6">
+							<h4>Air temperature</h4>
+							<p>{{ airtemps.air_temp }} (&deg C)
+							</p>
+						</div>
+						<div class="col-md-6">
+							<h4>Water temperature</h4>
+							<p>{{ watertemps.surf_temp }} (&deg C)
+							</p>
 					</div>
+						<div class="col-md-6">
+							<h4 >E. coli</h4>
+							<p>{{ waterqual.ecoli }} </p>
+						</div>	
+					<!-- </div> -->
 				</div>	
-			</div>
+			<!-- 	<div class="footer">
+				</div>	 -->
+
 		</div>
 	</body	
 </html>

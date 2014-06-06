@@ -1,19 +1,202 @@
-h1 {
-    font-weight: 300;
-    line-height: 1;
+body {
+    background: url(white_sand/Arlo.jpg) left top;
+    /*background-size: cover;*/
+}
+
+/*h1 {
+
     color: #fff
+}*/
+
+h1,
+.h1 {
+  font-size: 62.006px /* 64px */;
+}
+h2,
+.h2 {
+  font-size: 51.996px /* 52px */;
+}
+h3,
+.h3 {
+  font-size: 39.998000000000005px /* 40px */;
+}
+h4,
+.h4 {
+  font-size: 28.994000000000003px /* 29px */;
+}
+h5,
+.h5 {
+  font-size: 28px /* 28px */;
+}
+h6,
+.h6 {
+  font-size: 23.996px /* 24px */;
+}
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  line-height: 1.2em;
+}
+h1 {
+  font-weight: 700;
+}
+h2 {
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+h3 {
+  font-weight: 700;
+  margin-bottom: 4px;
+  margin-top: 2px;
+}
+h4 {
+  font-weight: 500;
+  margin-top: 4px;
+}
+h5 {
+  font-weight: 500;
+}
+h6 {
+  font-weight: normal;
+}
+p {
+  font-size: 18.004px;
+  /* 18px */
+  line-height: 1.722169;
+  /* 31px */
+  font-weight: 500;
+}
+
+.brand-heading {
+    font-size: 40px;
+}
+
+h4,
+.h4 {
+  font-size: 15.994000000000003px /* 29px */;
 }
 
 
+
+@media(min-width:767px) {
+    body {
+        background: url(white_sand/Arlo.jpg) no-repeat;
+        background-size: cover;
+    }
+
+    .brand-heading {
+        font-size: 62.006px;
+    }
+    h4,
+    .h4 {
+      font-size: 20.994000000000003px /* 29px */;
+    }
+}
+
+@media(min-width:900px) {
+    h4,
+    .h4 {
+      font-size: 28.994000000000003px /* 29px */;
+    }
+}
 .bs-docs-header {
     position: relative;
     padding: 30px 15px;
-    color: #cdbfe3;
+    /*color: #fff;*/
     text-align: center;
     text-shadow: 0 1px 0 rgba(0, 0, 0, .1);
-    background-color: #6f5499;
-    background-image: -webkit-linear-gradient(top, #563d7c 0, #6f5499 100%);
-    background-image: linear-gradient(to bottom, #563d7c 0, #6f5499 100%);
+/*    background-color: #54b4eb;
+    background-image: -webkit-linear-gradient(top, #086FA1 0, #034769 100%);
+    background-image: linear-gradient(to bottom, #086FA1 0, #034769 100%);
     background-repeat: repeat-x;
-    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#563d7c', endColorstr='#6F5499', GradientType=0)
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#563d7c', endColorstr='#6F5499', GradientType=0)*/
+}
+
+/* Space out content a bit */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  padding-bottom: 19px;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* Customize container */
+@media (min-width: 767px) {
+  .container {
+    max-width: 730px;
+  }
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+.jumbotron .btn {
+  padding: 14px 24px;
+  font-size: 21px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
 }
