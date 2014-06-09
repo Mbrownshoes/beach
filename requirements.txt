@@ -5,6 +5,7 @@ cffi==0.8.2
 cryptography==0.4
 cssselect==0.9.1
 dj-database-url==0.3.0
+dj-static==0.0.5
 gunicorn==18.0
 lxml==3.3.5
 psycopg2==2.5.3
@@ -12,10 +13,12 @@ pyOpenSSL==0.14
 pyasn1==0.1.7
 pyasn1-modules==0.0.5
 pycparser==2.10
+pystache==0.5.4
 queuelib==1.1.1
 selenium==2.42.1
 service-identity==0.2
 six==1.6.1
+static==1.0.2
 w3lib==1.6
 wsgiref==0.1.2
 zope.interface==4.1.1
