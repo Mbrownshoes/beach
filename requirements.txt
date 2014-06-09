@@ -4,6 +4,7 @@ Twisted==14.0.0
 cffi==0.8.2
 cryptography==0.4
 cssselect==0.9.1
+dj-database-url==0.3.0
 gunicorn==18.0
 lxml==3.3.5
 psycopg2==2.5.3
