@@ -85,8 +85,8 @@ STATIC_URL = '/static/'
 # Parse database configuration from $DATABASE_URL
 import dj_database_url
 
-#******UNCOMMENT BELOW TO DEPL*************
-if os.getcwd() == "/app":
+
+if os.getcwd() == "/app": # if heroku, use this config
      DATABASES['default'] =  dj_database_url.config()
 
 
