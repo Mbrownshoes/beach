@@ -102,11 +102,11 @@ h4,
     }
 }
 
-@media(min-width:900px) {
+/*@media(min-width:900px) {
     h4,
     .h4 {
       font-size: 28.994000000000003px /* 29px */;
-    }
+    }*/
 }
 .bs-docs-header {
     position: relative;
@@ -173,6 +173,11 @@ body {
   padding: 14px 24px;
   font-size: 21px;
 }
+
+/*td {
+  text-align: left;
+}*/
+
 
 /* Supporting marketing content */
 .marketing {

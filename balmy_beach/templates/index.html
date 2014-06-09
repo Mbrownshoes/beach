@@ -16,9 +16,29 @@
 					</p>
 				</div>
 
-				<div>
+				<div class="col-md-8" >
+					<table class="table border: none;">
+						<tbody style="font-size:1.5em">
+						<tr>
+							<td>Air temperature</td>
+							<td>{{ airtemps.air_temp }} (&deg C)</td>
+						</tr>
+
+						<tr>
+							<td>Water temperature</td>
+							<td>{{ watertemps.surf_temp}} (&deg C)</td>
+
+						<tr>
+							<td>Water Quality</td>
+							<td>{{ waterqual.ecoli }}</td>
+
+
+					</table>	
+
+
+
 					<!-- <div class="col-lg-6"> -->
-						<div class="col-md-6">
+						<!-- <div class="col-md-6">
 							<h4>Air temperature</h4>
 							<p>{{ airtemps.air_temp }} (&deg C)
 							</p>
@@ -31,7 +51,7 @@
 						<div class="col-md-6">
 							<h4 >E. coli</h4>
 							<p>{{ waterqual.ecoli }} </p>
-						</div>	
+						</div>	 -->
 					<!-- </div> -->
 				</div>	
 			<!-- 	<div class="footer">
