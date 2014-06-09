@@ -86,7 +86,8 @@ STATIC_URL = '/static/'
 import dj_database_url
 
 #******UNCOMMENT BELOW TO DEPL*************
-DATABASES['default'] =  dj_database_url.config()
+if os.getcwd() == "/app":
+     DATABASES['default'] =  dj_database_url.config()
 
 
 # Honor the 'X-Forwarded-Proto' header for request.is_secure()
