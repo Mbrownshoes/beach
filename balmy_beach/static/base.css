@@ -183,7 +183,7 @@ tbody {
   font-size:1em;
 }
 
-@media screen and (min-width: 319px) {
+@media screen and (min-width: 321px) {
   tbody {
     font-size:1.5em;
   } 
