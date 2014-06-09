@@ -86,8 +86,8 @@ STATIC_URL = '/static/'
 import dj_database_url
 
 
-if os.getcwd() == "/app": # if heroku, use this config
-     DATABASES['default'] =  dj_database_url.config()
+# if os.getcwd() == "/app": # if heroku, use this config
+ DATABASES['default'] =  dj_database_url.config()
 
 
 # Honor the 'X-Forwarded-Proto' header for request.is_secure()
