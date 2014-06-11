@@ -37,6 +37,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'balmy_beach',
+    'south',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -86,7 +87,6 @@ STATIC_URL = '/static/'
 import dj_database_url
 
 
-# if os.getcwd() == "/app": # if heroku, use this config
 DATABASES['default'] =  dj_database_url.config()
 
 

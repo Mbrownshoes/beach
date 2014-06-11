@@ -1,5 +1,7 @@
 from scrapy.spider import Spider
 from scrapy.selector import Selector
+from datetime import datetime
+
 from mybot.items import AirTItem, WaterTItem, WaterQualityItem
 import re
 
@@ -20,7 +22,8 @@ class AirTSpider(Spider):
             item=AirTItem()
             m = re.search('<td>(\w+)', site)
             item['air_temp'] = m.group(1)
-       
+            item['pub_date'] = datetime.now()
+
         yield item
 
       
@@ -41,6 +44,8 @@ class WaterTSpider(Spider):
             m = re.search('<td>(\w+)', site)
             item['surf_temp'] = m.group(1)
 
+        # meas_time=sel.xpath('//span[@class="issuedTime"]').re('(\d+:\d\d)')
+
         yield item
 
 class WaterQualitySpider(Spider):
@@ -59,4 +64,7 @@ class WaterQualitySpider(Spider):
             m = re.search('(\d+)', site)
             item['ecoli'] = m.group(1)
             
-        yield item        
+        yield item    
+
+
+
