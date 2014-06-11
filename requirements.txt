@@ -1,5 +1,6 @@
 Django==1.6.5
 Scrapy==0.22.2
+South==0.8.4
 Twisted==14.0.0
 cffi==0.8.2
 cryptography==0.4
