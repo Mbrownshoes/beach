@@ -37,6 +37,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'balmy_beach',
+    'south',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -86,8 +87,8 @@ STATIC_URL = '/static/'
 import dj_database_url
 
 #******UNCOMMENT BELOW TO DEPL*************
-if os.getcwd() == "/app":
-     DATABASES['default'] =  dj_database_url.config()
+# if os.getcwd() == "/app":
+# DATABASES['default'] =  dj_database_url.config()
 
 
 # Honor the 'X-Forwarded-Proto' header for request.is_secure()
