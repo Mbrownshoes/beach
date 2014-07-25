@@ -49,23 +49,13 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-# TEMPLATE_CONTEXT_PROCESSORS = (
-#     'django_browserid.context_processors.browserid_form',
-#     'django.contrib.auth.context_processors.auth',
-# )
 
-AUTHENTICATION_BACKENDS = (
-   # ...
-   'django.contrib.auth.backends.ModelBackend',
-   'django_browserid.auth.BrowserIDBackend',
-   # ...
-)
+
 
 ROOT_URLCONF = 'beach.urls'
 
 WSGI_APPLICATION = 'beach.wsgi.application'
 
-LOGIN_REDIRECT_URL = '/'
 # Database
 # https://docs.djangoproject.com/en/1.6/ref/settings/#databases
 
@@ -98,7 +88,7 @@ USE_TZ = True
 import dj_database_url
 
 
-# DATABASES['default'] =  dj_database_url.config()
+DATABASES['default'] =  dj_database_url.config()
 
 
 # Honor the 'X-Forwarded-Proto' header for request.is_secure()
